@@ -1,0 +1,72 @@
+﻿@model IEnumerable<stock_promo.Models.InsiderData>
+
+<div class="table-responsive">
+    <p>
+        @Html.ActionLink("GetFilteredInsiderData", "GetFilteredInsiderData", new {x = Json.Serialize(Model)})
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.SYMBOL)</th>
+                <th>@Html.DisplayNameFor(model => model.COMPANY)</th>
+                <th>@Html.DisplayNameFor(model => model.REGULATION )</th>
+                <th>@Html.DisplayNameFor(model => model.TYPEOFSECURITYPRIOR  )</th>
+                <th>@Html.DisplayNameFor(model => model.NOOFSECURITYPRIOR )</th>
+                <th>@Html.DisplayNameFor(model => model.SHAREHOLDINGPRIOR )</th>
+                <th>@Html.DisplayNameFor(model => model.TYPEOFSECURITYACQUIREDDISPLOSED )</th>
+                <th>@Html.DisplayNameFor(model => model.NOOFSECURITIESACQUIREDDISPLOSED )</th>
+                <th>@Html.DisplayNameFor(model => model.VALUEOFSECURITYACQUIREDDISPLOSED )</th>
+                <th>@Html.DisplayNameFor(model => model.ACQUISITIONDISPOSALTRANSACTIONTYPE  )</th>
+                <th>@Html.DisplayNameFor(model => model.TYPEOFSECURITYPOST )</th>                
+                <th>@Html.DisplayNameFor(model => model.NOOFSECURITYPOST  )</th>
+                <th>@Html.DisplayNameFor(model => model.SHAREHOLDINGPOST )</th>
+                <th>@Html.DisplayNameFor(model => model.DATEOFALLOTMENTACQUISITIONFROM )</th>
+                <th>@Html.DisplayNameFor(model => model.DATEOFALLOTMENTACQUISITIONTO )</th>
+                <th>@Html.DisplayNameFor(model => model.DATEOFINITMATIONTOCOMPANY )</th>
+                <th>@Html.DisplayNameFor(model => model.MODEOFACQUISITION)</th>
+                <th>@Html.DisplayNameFor(model => model.DERIVATIVETYPESECURITY  )</th>
+                <th>@Html.DisplayNameFor(model => model.DERIVATIVECONTRACTSPECIFICATION  )</th>
+                <th>@Html.DisplayNameFor(model => model.NOTIONALVALUEBUY  )</th>
+                <th>@Html.DisplayNameFor(model => model.NUMBEROFUNITSCONTRACTLOTSIZEBUY  )</th>
+                <th>@Html.DisplayNameFor(model => model.NOTIONALVALUESELL  )</th>
+                <th>@Html.DisplayNameFor(model => model.NUMBEROFUNITSCONTRACTLOTSIZESELL  )</th>
+                <th>@Html.DisplayNameFor(model => model.REMARK   )</th>
+                <th>@Html.DisplayNameFor(model => model.BROADCASTEDATEANDTIME)</th>
+                <th>@Html.DisplayNameFor(model => model.XBRL   )</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <th>@Html.DisplayFor(modelmodelItem => item.SYMBOL)</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.COMPANY)</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.REGULATION )</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.TYPEOFSECURITYPRIOR  )</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.NOOFSECURITYPRIOR )</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.SHAREHOLDINGPRIOR )</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.TYPEOFSECURITYACQUIREDDISPLOSED )</th>
+                <th>@Html.DisplayFor(modelItem => item.NOOFSECURITIESACQUIREDDISPLOSED )</th>
+                <th>@Html.DisplayFor(modelItem => item.VALUEOFSECURITYACQUIREDDISPLOSED )</th>
+                <th>@Html.DisplayFor(modelItem => item.ACQUISITIONDISPOSALTRANSACTIONTYPE  )</th>
+                <th>@Html.DisplayFor(modelItem => item.TYPEOFSECURITYPOST )</th>                
+                <th>@Html.DisplayFor(modelItem => item.NOOFSECURITYPOST  )</th>
+                <th>@Html.DisplayFor(modelItem => item.SHAREHOLDINGPOST )</th>
+                <th>@Html.DisplayFor(modelItem => item.DATEOFALLOTMENTACQUISITIONFROM )</th>
+                <th>@Html.DisplayFor(modelItem => item.DATEOFALLOTMENTACQUISITIONTO )</th>
+                <th>@Html.DisplayFor(modelItem => item.DATEOFINITMATIONTOCOMPANY )</th>
+                <th>@Html.DisplayFor(modelItem => item.MODEOFACQUISITION)</th>
+                <th>@Html.DisplayFor(modelItem => item.DERIVATIVETYPESECURITY  )</th>
+                <th>@Html.DisplayFor(modelItem => item.DERIVATIVECONTRACTSPECIFICATION  )</th>
+                <th>@Html.DisplayFor(modelItem => item.NOTIONALVALUEBUY  )</th>
+                <th>@Html.DisplayFor(modelItem => item.NUMBEROFUNITSCONTRACTLOTSIZEBUY  )</th>
+                <th>@Html.DisplayFor(modelItem => item.NOTIONALVALUESELL  )</th>
+                <th>@Html.DisplayFor(modelItem => item.NUMBEROFUNITSCONTRACTLOTSIZESELL  )</th>
+                <th>@Html.DisplayFor(modelItem => item.REMARK   )</th>
+                <th>@Html.DisplayFor(modelItem => item.BROADCASTEDATEANDTIME    )</th>
+                <th>@Html.DisplayFor(modelItem => item.XBRL   )</th>
+            </tr>
+            }
+        </tbody>
+    </table>
+    </div>

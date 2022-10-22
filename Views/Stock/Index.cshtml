@@ -1,0 +1,39 @@
+﻿@model stock_promo.Models.FileUpload
+
+
+<form asp-action="GetStockListWithoutAnyFilter" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="File" class="control-label"></label>
+        <input asp-for="File" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        <input class="btn btn-primary" type="submit" value="Get All Data" />
+    </div>
+</form>
+
+<br /><br /><br />
+
+<form asp-action="GetFilteredInsiderData" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="File" class="control-label"></label>
+        <input asp-for="File" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        <input class="btn btn-primary" type="submit" value="Get Filtered Insider Data" />
+    </div>
+</form>
+
+<br /><br /><br />
+
+<form asp-action="GetFilteredStockName" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="File" class="control-label"></label>
+        <input asp-for="File" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        <input class="btn btn-primary" type="submit" value="Get Filtered Data" />
+    </div>
+</form>

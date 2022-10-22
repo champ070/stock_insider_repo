@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "yGMHqOXQ2OUPCM341roqbXMF2Pc4E/QBSbqwsyxuZkJanm+7eFclc/yLrcexxwdgS7vSI8rQa4qw3524DlNTfw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bjati\\Desktop\\stock_insider_repo\\stock_promo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bjati\\.nuget\\packages\\csvhelper\\12.1.2\\csvhelper.12.1.2.nupkg.sha512",
+    "C:\\Users\\bjati\\.nuget\\packages\\microsoft.csharp\\4.4.0\\microsoft.csharp.4.4.0.nupkg.sha512",
+    "C:\\Users\\bjati\\.nuget\\packages\\system.reflection.typeextensions\\4.4.0\\system.reflection.typeextensions.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

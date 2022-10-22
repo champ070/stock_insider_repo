@@ -1,0 +1,21 @@
+﻿@model stock_promo.Models.FileUpload
+
+@{
+    ViewData["Title"] = "File Upload";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>File upload</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                @*<label asp-for="File" class="control-label"></label>
+                <input asp-for="File" class="form-control" />
+                <span asp-validation-for="File" class="text-danger"></span>*@
+            </div>
+        </form>
+    </div>
+</div>

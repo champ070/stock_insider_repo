@@ -1,0 +1,46 @@
+﻿@model IEnumerable<stock_promo.Models.FilteredDataOutputDto>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Symbol)</th>
+                <th>@Html.DisplayNameFor(model => model.BuyPrice)</th>
+                <th>@Html.DisplayNameFor(model => model.ShareholdingIncrease )</th>
+                <th>@Html.DisplayNameFor(model => model.FirstDateOfAllotment  )</th>
+                <th>@Html.DisplayNameFor(model => model.LastDateOfAllotment )</th>
+                <th>@Html.DisplayNameFor(model => model.NumberOfTxn )</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <th>@Html.DisplayFor(modelmodelItem => item.Symbol)</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.BuyPrice)</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.ShareholdingIncrease )</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.FirstDateOfAllotment  )</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.LastDateOfAllotment )</th>
+                <th>@Html.DisplayFor(modelmodelItem => item.NumberOfTxn )</th>
+            </tr>
+            }
+        </tbody>
+    </table>
+    </div>
